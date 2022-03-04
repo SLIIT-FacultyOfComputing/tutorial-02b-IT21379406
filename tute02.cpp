@@ -13,7 +13,8 @@
 //Please Note that the input command in C++ is std::cin. This is a representation of the Keyboard.*/
 
 #include <iostream>
-int main()
+using namespace std;
+int main() {
    double salary, netSalary;
    int etype, otHrs, otRate;
 
@@ -22,8 +23,8 @@ int main()
    cin>>etype;
    cout<<"enter salary :";
    cin>>salary;
-   cout<<"enter others:";
-   cin>>others;
+   cout<<"enter otHrs:";
+   cin>>otHrs;
    
    switch (etype)
    {
@@ -42,7 +43,7 @@ int main()
 
 
    netSalary = salary + otHrs* otRate;
-   printf("Net Salary is %f ", netSalary);
+   cout<<"net salary  :"<< netSalary;
   
    return 0;
 }
